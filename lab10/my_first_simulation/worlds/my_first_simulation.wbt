@@ -1,0 +1,37 @@
+#VRML_SIM R2020a utf8
+WorldInfo {
+  basicTimeStep 16
+}
+Viewpoint {
+  orientation -0.7912039923349459 -0.5674972604736312 -0.22791029346689498 0.9654551947071545
+  position -1.212387676697008 1.84921633012335 1.6062511890148636
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorTileSize 0.25 0.25
+  wallHeight 0.05
+}
+WoodenBox {
+  translation 0.179305 0.05 0.255789
+  rotation 0 1 0 0.785398
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.280085 0.05 -0.145767
+  rotation 0 1 0 2.0944
+  name "wooden box(2)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation 0.361387 0.05 -0.363152
+  name "wooden box(1)"
+  size 0.1 0.1 0.1
+}
+E-puck {
+  translation 0.0192081 0 -0.182215
+  rotation 0 1 0 0.261799
+  controller "epuck_avoid_collision"
+}

@@ -1,0 +1,207 @@
+#VRML_SIM R2020a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.49813791197397533 0.8384023634446675 0.22122408915984645 4.794952002881303
+  position -6.470973890741106 6.72576816588779 -2.063983758338372
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Solid {
+  children [
+    Shape {
+    }
+  ]
+}
+CircleArena {
+  radius 5
+  floorAppearance PBRAppearance {
+  }
+  wallThickness 0.25
+  wallHeight 0.5
+  subdivision 150
+}
+CircleArena {
+  name "circle arena(1)"
+  radius 3
+  floorAppearance PBRAppearance {
+  }
+  wallThickness 0.25
+  wallHeight 0.5
+  subdivision 150
+}
+StraightStairs {
+  translation -0.375 0 4.125
+  stepSize 0.2 0.03 1.75
+  stepRise 0.075
+  nSteps 10
+  stringerWidth 0
+  stepAppearance VarnishedPine {
+    colorOverride 0.803922 0.67451 0.576471
+  }
+  stringerAppearance VarnishedPine {
+    colorOverride 0.803922 0.67451 0.576471
+  }
+  leftRail []
+  rightRail []
+}
+Solid {
+  translation 3.25 0.375 4.125
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.666667 0.498039
+        metalness 0
+      }
+      geometry DEF WALL5 Box {
+        size 3.5 0.75 1.75
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject USE WALL5
+}
+Solid {
+  translation 4.125 0.3 1
+  rotation -1 0 0 0.36
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.666667 0.498039
+        metalness 0
+      }
+      geometry DEF WALL5 Box {
+        size 1.75 0.1 2.14
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject USE WALL5
+}
+Solid {
+  translation 4.125 0.375 2.625
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.666667 0.498039
+        metalness 0
+      }
+      geometry DEF WALL4 Box {
+        size 1.75 0.75 1.25
+      }
+    }
+  ]
+  name "solid(3)"
+  boundingObject USE WALL4
+}
+Solid {
+  translation 2.475 1 5.125
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.666667 0.498039
+        metalness 0
+      }
+      geometry DEF WALL3 Box {
+        size 5.375 2 0.25
+      }
+    }
+  ]
+  name "solid(4)"
+  boundingObject USE WALL3
+}
+Solid {
+  translation 5.125 0.5 2.475
+  rotation 0 1 0 1.57
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.666667 0.498039
+        metalness 0
+      }
+      geometry DEF WALL2 Box {
+        size 5.375 1 0.25
+      }
+    }
+  ]
+  name "solid(5)"
+  boundingObject USE WALL2
+}
+Solid {
+  translation 5.125 1 1.5
+  rotation 0 1 0 1.57
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.666667 0.498039
+        metalness 0
+      }
+      geometry DEF WALL1 Box {
+        size 3.675 2 0.25
+      }
+    }
+  ]
+  name "solid(6)"
+  boundingObject USE WALL1
+}
+Solid {
+  translation 3.125 1 1.5
+  rotation 0 1 0 1.57
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.666667 0.498039
+        metalness 0
+      }
+      geometry DEF WALL6 Box {
+        size 3.5 2 0.25
+      }
+    }
+  ]
+  name "solid(8)"
+  boundingObject USE WALL6
+}
+Solid {
+  translation -4.125 0.325 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.666667 0 0
+        metalness 0
+      }
+      geometry DEF OBST Box {
+        size 0.75 0.75 0.75
+      }
+    }
+  ]
+  name "solid(7)"
+  boundingObject USE OBST
+  physics Physics {
+    mass 0.001
+  }
+}
+Solid {
+  translation 1.5 1 3.125
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.666667 0.498039
+        metalness 0
+      }
+      geometry DEF WALL6 Box {
+        size 3.5 2 0.25
+      }
+    }
+  ]
+  name "solid(9)"
+  boundingObject USE WALL6
+}
+WoodenPallet {
+  translation 1.61819 0.5 -3.75965
+  rotation 0 0 1 1.57
+}
+Pioneer3dx {
+  translation 0 0.0975 -4.125
+}
